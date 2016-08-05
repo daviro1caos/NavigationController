@@ -14,6 +14,10 @@
 @property NSMutableArray *destinationDescriptions;
 @property NSMutableArray *destinationPhotos;
 
+@property NSString *stTitleSelected;
+@property NSString *stDescriptionSelected;
+@property NSString *stPhotoSelected;
+
 @end
 
 @implementation Home
@@ -75,8 +79,10 @@
 }
 //-------------------------------------------------------------------------------
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    [self performSegueWithIdentifier:@"DestinationDetails" sender:self];	
+    self.stTitleSelected        = self.destinationTitles[indexPath.row];
+    self.stDescriptionSelected  = self.destinationDescriptions[indexPath.row];
+    self.stPhotoSelected        = self.destinationPhotos[indexPath.row];
+    [self performSegueWithIdentifier:@"DestinationDetails" sender:self];
     
 }
 
