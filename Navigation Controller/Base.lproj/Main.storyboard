@@ -28,10 +28,48 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="XJk-Fk-vEK"/>
+                    <connections>
+                        <segue destination="o5t-es-1AK" kind="push" identifier="DestinationDetails" id="ncE-cT-7Ms"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="293" y="325"/>
+        </scene>
+        <!--Destination Details-->
+        <scene sceneID="2mT-ME-YJH">
+            <objects>
+                <viewController storyboardIdentifier="DestinationDetails" id="o5t-es-1AK" customClass="DestinationDetails" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f0T-XR-NH3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Krq-kn-kM6">
+                                <rect key="frame" x="143" y="306" width="50" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image5.png" id="fzF-gM-xJp">
+                                <rect key="frame" x="0.0" y="65" width="320" height="224"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MRh-bd-T7Z">
+                                <rect key="frame" x="9" y="361" width="280" height="180"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.51503190450000003" green="0.51503190450000003" blue="0.51503190450000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6sq-Ft-io5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bhK-tK-UPa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="688" y="321"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Auo-P0-eyT">
@@ -50,4 +88,7 @@
             <point key="canvasLocation" x="-104" y="325"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="image5.png" width="218" height="231"/>
+    </resources>
 </document>
