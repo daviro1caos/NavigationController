@@ -13,11 +13,14 @@
 @property NSString *destinationTitle;
 @property NSString *destinationDescription;
 @property NSString *destinationPhoto;
+
+@property (strong, nonatomic) IBOutlet UIImageView *imgDestination;
 @property (strong, nonatomic) IBOutlet UILabel *lblTitle;
+
 @property (strong, nonatomic) IBOutlet UILabel *lblDescription;
-@property (strong, nonatomic) IBOutlet UILabel *imgDestination;
 
 /*@property (strong, nonatomic) IBOutlet UIImageView *imgDestination;
 @property (strong, nonatomic) IBOutlet UILabel *lblTitle;
 @property (strong, nonatomic) IBOutlet UILabel *lblDescription;*/
+
 @end

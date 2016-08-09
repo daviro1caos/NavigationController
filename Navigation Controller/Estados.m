@@ -1,28 +1,29 @@
 //
-//  ViewController.m
+//  Estados.m
 //  Navigation Controller
 //
-//  Created by Daniel on 8/3/16.
+//  Created by Daniel on 8/8/16.
 //  Copyright © 2016 DanielCompany. All rights reserved.
 //
 
-#import "Home.h"
+#import "Estados.h"
+
+@interface Estados ()
 
 
-@interface Home ()
-@property NSMutableArray *destinationTitles;
-@property NSMutableArray *destinationDescriptions;
-@property NSMutableArray *destinationPhotos;
 
-@property NSString *stTitleSelected;
-@property NSString *stDescriptionSelected;
-@property NSString *stPhotoSelected;
+@property NSMutableArray *destinationTitlesUtah;
+@property NSMutableArray *destinationDescriptionsUtah;
+@property NSMutableArray *destinationPhotosUtah;
 
+@property NSString *stTitleSelectedUtah;
+@property NSString *stDescriptionSelectedUtah;
+@property NSString *stPhotoSelectedUtah;
 
 
 @end
 
-@implementation Home
+@implementation Estados
 
 /**********************************************************************************************/
 #pragma mark - Initialization methods
@@ -31,33 +32,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initController];
-    // Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading the view.
 }
-//-------------------------------------------------------------------------------
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 - (void)initController {
-
-    self.destinationPhotos         = [[NSMutableArray alloc] initWithObjects: @"image1.png", @"image2.png", @"image3.png", @"image4.png",@"image5.png", nil];
-    self.destinationDescriptions   = [[NSMutableArray alloc] initWithObjects: @"Desierto Navajo", @"Rio de deshielo", @"Lugar habitado mas frio del mundo", @"Cascada del salto",@"Muelle de San Blas", nil];
-    self.destinationTitles         = [[NSMutableArray alloc] initWithObjects: @"Utah", @"NuevaZelanda", @"Yakutia", @"Venezuela",@"San Blas", nil];
-    
-    
-    
-    /*self.destinationPhotos         = [[NSMutableArray alloc] initWithObjects: @"LaytonMountain.jpg", @"OremUniversity.jpg", @"provomontanas.jpg", @"SaladeroUtah.jpg",@"SandyCordillero.jpg", nil];
-    self.destinationDescriptions   = [[NSMutableArray alloc] initWithObjects: @"Saladero", @"Mont;as con ciervos", @"Valley University", @"Cordillera Sasaht",@"Lagos de dehielo", nil];
-    self.destinationTitles         = [[NSMutableArray alloc] initWithObjects: @"Salt lake city", @"Provo", @"Orem", @"Sandy",@"layton", nil];*/
-    
-    
-    
     
 
-     
-     
-     /*self.destinationPhotosNuevaZelanda         = [[NSMutableArray alloc] initWithObjects: @"image1_1.png", @"image1_2.png", @"image1_3.png", @"image1_4.png",@"image1_5.png", nil];
+    
+    self.destinationPhotosUtah         = [[NSMutableArray alloc] initWithObjects: @"NZauckland.jpg", @"NZBay.jpg", @"NZnorthland.jpg", @"NZSangisborn.jpg",@"NZSangisborn.jpg", nil];
+    self.destinationDescriptionsUtah   = [[NSMutableArray alloc] initWithObjects: @"Norte sin invierno", @"desembocadura del Kaipara", @"paisajes verdes, colinas y actividad agropecuaria", @"rodeada por las cordilleras Mamaku",@" superficie terrestre más alejado", nil];
+    self.destinationTitlesUtah         = [[NSMutableArray alloc] initWithObjects: @"Northland", @"Auckland", @"Waikato", @"Bay",@"San Gisborn", nil];
+    
+    
+    /*self.destinationPhotosNuevaZelanda         = [[NSMutableArray alloc] initWithObjects: @"image1_1.png", @"image1_2.png", @"image1_3.png", @"image1_4.png",@"image1_5.png", nil];
      self.destinationDescriptionsNuevaZelanda   = [[NSMutableArray alloc] initWithObjects: @"Saladero", @"Mont;as con ciervos", @"Valley University", @"Cordillera Sasaht",@"Lagos de dehielo", nil];
      self.destinationTitlesNuevaZelanda         = [[NSMutableArray alloc] initWithObjects: @"Salt lake city", @"Provo", @"Orem", @"Sandy",@"layton", nil];
      
@@ -84,7 +75,7 @@
 }
 //-------------------------------------------------------------------------------
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.destinationTitles.count;
+    return self.destinationTitlesUtah.count;
 }
 //-------------------------------------------------------------------------------
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -93,16 +84,16 @@
 //-------------------------------------------------------------------------------
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     //Initialize cells
-    cellHome *cell = (cellHome *)[tableView dequeueReusableCellWithIdentifier:@"cellHome"];
+    cellEstados *cell = (cellEstados *)[tableView dequeueReusableCellWithIdentifier:@"cellEstados"];
     
     if (cell == nil) {
-        [tableView registerNib:[UINib nibWithNibName:@"cellHome" bundle:nil] forCellReuseIdentifier:@"cellHome"];
-        cell = [tableView dequeueReusableCellWithIdentifier:@"cellHome"];
+        [tableView registerNib:[UINib nibWithNibName:@"cellEstados" bundle:nil] forCellReuseIdentifier:@"cellEstados"];
+        cell = [tableView dequeueReusableCellWithIdentifier:@"cellEstados"];
     }
     //Fill cell with info from arrays
-    cell.imgDestination.image        = [UIImage imageNamed:self.destinationPhotos[indexPath.row]];
-    cell.lblDestination.text    = self.destinationTitles[indexPath.row];
-    cell.lblDescription.text         = self.destinationDescriptions[indexPath.row];
+    cell.imgEstados.image        = [UIImage imageNamed:self.destinationPhotosUtah[indexPath.row]];
+    cell.LabelDestiantionEstados.text    = self.destinationTitlesUtah[indexPath.row];
+    cell.LabelDescriptionEstados.text         = self.destinationDescriptionsUtah[indexPath.row];
     
     
     
@@ -110,10 +101,10 @@
 }
 //-------------------------------------------------------------------------------
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    self.stTitleSelected        = self.destinationTitles[indexPath.row];
-    self.stDescriptionSelected  = self.destinationDescriptions[indexPath.row];
-    self.stPhotoSelected        = self.destinationPhotos[indexPath.row];
-    [self performSegueWithIdentifier:@"DestinationDetails" sender:self];
+    self.stTitleSelectedUtah        = self.destinationTitlesUtah[indexPath.row];
+    self.stDescriptionSelectedUtah  = self.destinationDescriptionsUtah[indexPath.row];
+    self.stPhotoSelectedUtah        = self.destinationPhotosUtah[indexPath.row];
+    [self performSegueWithIdentifier:@"Home" sender:self];
     
 }
 
@@ -122,13 +113,12 @@
 /**********************************************************************************************/
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
-    if ([segue.destinationViewController isKindOfClass:[DestinationDetails class]]) {
-       DestinationDetails *destination     = [segue destinationViewController];
-        destination.destinationTitle        = self.stTitleSelected;
-        destination.destinationDescription  = self.stDescriptionSelected;
-        destination.destinationPhoto        = self.stPhotoSelected;
-        
-    }
+    if ([segue.destinationViewController isKindOfClass:[Home class]]) {
+       Home *destinationEstados     = [segue destinationViewController];
+       destinationEstados.destinationTitlesUtah        = self.stTitleSelectedUtah;
+        /*destination.destinationDescription  = self.stDescriptionSelectedUtah;
+        destination.destinationPhoto        = self.stPhotoSelectedUtah;*/
+   }
 }
-    
+
 @end

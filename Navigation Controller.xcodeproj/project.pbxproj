@@ -7,6 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65455BBB1D59565400BB37C0 /* cellEstados.m in Sources */ = {isa = PBXBuildFile; fileRef = 65455BB91D59565400BB37C0 /* cellEstados.m */; };
+		65455BBC1D59565400BB37C0 /* cellEstados.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65455BBA1D59565400BB37C0 /* cellEstados.xib */; };
+		65455BDA1D596F2400BB37C0 /* Layton5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65455BBD1D596F2400BB37C0 /* Layton5.jpg */; };
+		65455BDB1D596F2400BB37C0 /* LaytonMountain.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65455BBE1D596F2400BB37C0 /* LaytonMountain.jpg */; };
+		65455BDC1D596F2400BB37C0 /* NZauckland.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65455BBF1D596F2400BB37C0 /* NZauckland.jpg */; };
+		65455BDD1D596F2400BB37C0 /* NZBay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65455BC01D596F2400BB37C0 /* NZBay.jpg */; };
+		65455BDE1D596F2400BB37C0 /* NZnorthland.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65455BC11D596F2400BB37C0 /* NZnorthland.jpg */; };
+		65455BDF1D596F2400BB37C0 /* NZSangisborn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65455BC21D596F2400BB37C0 /* NZSangisborn.jpg */; };
+		65455BE01D596F2400BB37C0 /* NZwaikato.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65455BC31D596F2400BB37C0 /* NZwaikato.jpg */; };
+		65455BE11D596F2400BB37C0 /* OremUniversity.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65455BC41D596F2400BB37C0 /* OremUniversity.jpg */; };
+		65455BE21D596F2400BB37C0 /* provomontanas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65455BC51D596F2400BB37C0 /* provomontanas.jpg */; };
+		65455BE31D596F2400BB37C0 /* SaladeroUtah.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65455BC61D596F2400BB37C0 /* SaladeroUtah.jpg */; };
+		65455BE41D596F2400BB37C0 /* SandyCordillera.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65455BC71D596F2400BB37C0 /* SandyCordillera.jpg */; };
+		65455BE51D596F2400BB37C0 /* SBCocodrilario.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65455BC81D596F2400BB37C0 /* SBCocodrilario.jpg */; };
+		65455BE61D596F2400BB37C0 /* SBcocotero.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65455BC91D596F2400BB37C0 /* SBcocotero.jpg */; };
+		65455BE71D596F2400BB37C0 /* SBDefensa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65455BCA1D596F2400BB37C0 /* SBDefensa.jpg */; };
+		65455BE81D596F2400BB37C0 /* SBIslaPiedra.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65455BCB1D596F2400BB37C0 /* SBIslaPiedra.jpg */; };
+		65455BE91D596F2400BB37C0 /* SBPresidente.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65455BCC1D596F2400BB37C0 /* SBPresidente.jpg */; };
+		65455BEA1D596F2400BB37C0 /* SBTemplo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65455BCD1D596F2400BB37C0 /* SBTemplo.jpg */; };
+		65455BEB1D596F2400BB37C0 /* SBTobara.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65455BCE1D596F2400BB37C0 /* SBTobara.jpg */; };
+		65455BEC1D596F2400BB37C0 /* Vartes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65455BCF1D596F2400BB37C0 /* Vartes.jpg */; };
+		65455BED1D596F2400BB37C0 /* VmedanasOro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65455BD01D596F2400BB37C0 /* VmedanasOro.jpg */; };
+		65455BEE1D596F2400BB37C0 /* VSalBay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65455BD11D596F2400BB37C0 /* VSalBay.jpg */; };
+		65455BEF1D596F2400BB37C0 /* VSaltoAngel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65455BD21D596F2400BB37C0 /* VSaltoAngel.jpg */; };
+		65455BF01D596F2400BB37C0 /* Vsequia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65455BD31D596F2400BB37C0 /* Vsequia.jpg */; };
+		65455BF11D596F2400BB37C0 /* Vsouth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65455BD41D596F2400BB37C0 /* Vsouth.jpg */; };
+		65455BF21D596F2400BB37C0 /* YakutiaBlackForest.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65455BD51D596F2400BB37C0 /* YakutiaBlackForest.jpg */; };
+		65455BF31D596F2400BB37C0 /* YakutiaEsquimal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65455BD61D596F2400BB37C0 /* YakutiaEsquimal.jpg */; };
+		65455BF41D596F2400BB37C0 /* YakutiaLago.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65455BD71D596F2400BB37C0 /* YakutiaLago.jpg */; };
+		65455BF51D596F2400BB37C0 /* Yakutiamina.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65455BD81D596F2400BB37C0 /* Yakutiamina.jpg */; };
+		65455BF61D596F2400BB37C0 /* YakutiaMongol.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65455BD91D596F2400BB37C0 /* YakutiaMongol.jpg */; };
+		65455BFF1D5973AB00BB37C0 /* Estados.m in Sources */ = {isa = PBXBuildFile; fileRef = 65455BFE1D5973AB00BB37C0 /* Estados.m */; };
 		6545765D1D52CF820035A27C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6545765C1D52CF820035A27C /* main.m */; };
 		654576601D52CF820035A27C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6545765F1D52CF820035A27C /* AppDelegate.m */; };
 		654576631D52CF820035A27C /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = 654576621D52CF820035A27C /* Home.m */; };
@@ -25,12 +57,46 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		65455BB81D59565400BB37C0 /* cellEstados.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cellEstados.h; sourceTree = "<group>"; };
+		65455BB91D59565400BB37C0 /* cellEstados.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cellEstados.m; sourceTree = "<group>"; };
+		65455BBA1D59565400BB37C0 /* cellEstados.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cellEstados.xib; sourceTree = "<group>"; };
+		65455BBD1D596F2400BB37C0 /* Layton5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Layton5.jpg; sourceTree = "<group>"; };
+		65455BBE1D596F2400BB37C0 /* LaytonMountain.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LaytonMountain.jpg; sourceTree = "<group>"; };
+		65455BBF1D596F2400BB37C0 /* NZauckland.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NZauckland.jpg; sourceTree = "<group>"; };
+		65455BC01D596F2400BB37C0 /* NZBay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NZBay.jpg; sourceTree = "<group>"; };
+		65455BC11D596F2400BB37C0 /* NZnorthland.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NZnorthland.jpg; sourceTree = "<group>"; };
+		65455BC21D596F2400BB37C0 /* NZSangisborn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NZSangisborn.jpg; sourceTree = "<group>"; };
+		65455BC31D596F2400BB37C0 /* NZwaikato.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NZwaikato.jpg; sourceTree = "<group>"; };
+		65455BC41D596F2400BB37C0 /* OremUniversity.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = OremUniversity.jpg; sourceTree = "<group>"; };
+		65455BC51D596F2400BB37C0 /* provomontanas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = provomontanas.jpg; sourceTree = "<group>"; };
+		65455BC61D596F2400BB37C0 /* SaladeroUtah.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SaladeroUtah.jpg; sourceTree = "<group>"; };
+		65455BC71D596F2400BB37C0 /* SandyCordillera.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SandyCordillera.jpg; sourceTree = "<group>"; };
+		65455BC81D596F2400BB37C0 /* SBCocodrilario.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SBCocodrilario.jpg; sourceTree = "<group>"; };
+		65455BC91D596F2400BB37C0 /* SBcocotero.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SBcocotero.jpg; sourceTree = "<group>"; };
+		65455BCA1D596F2400BB37C0 /* SBDefensa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SBDefensa.jpg; sourceTree = "<group>"; };
+		65455BCB1D596F2400BB37C0 /* SBIslaPiedra.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SBIslaPiedra.jpg; sourceTree = "<group>"; };
+		65455BCC1D596F2400BB37C0 /* SBPresidente.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SBPresidente.jpg; sourceTree = "<group>"; };
+		65455BCD1D596F2400BB37C0 /* SBTemplo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SBTemplo.jpg; sourceTree = "<group>"; };
+		65455BCE1D596F2400BB37C0 /* SBTobara.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SBTobara.jpg; sourceTree = "<group>"; };
+		65455BCF1D596F2400BB37C0 /* Vartes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Vartes.jpg; sourceTree = "<group>"; };
+		65455BD01D596F2400BB37C0 /* VmedanasOro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = VmedanasOro.jpg; sourceTree = "<group>"; };
+		65455BD11D596F2400BB37C0 /* VSalBay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = VSalBay.jpg; sourceTree = "<group>"; };
+		65455BD21D596F2400BB37C0 /* VSaltoAngel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = VSaltoAngel.jpg; sourceTree = "<group>"; };
+		65455BD31D596F2400BB37C0 /* Vsequia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Vsequia.jpg; sourceTree = "<group>"; };
+		65455BD41D596F2400BB37C0 /* Vsouth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Vsouth.jpg; sourceTree = "<group>"; };
+		65455BD51D596F2400BB37C0 /* YakutiaBlackForest.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = YakutiaBlackForest.jpg; sourceTree = "<group>"; };
+		65455BD61D596F2400BB37C0 /* YakutiaEsquimal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = YakutiaEsquimal.jpg; sourceTree = "<group>"; };
+		65455BD71D596F2400BB37C0 /* YakutiaLago.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = YakutiaLago.jpg; sourceTree = "<group>"; };
+		65455BD81D596F2400BB37C0 /* Yakutiamina.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Yakutiamina.jpg; sourceTree = "<group>"; };
+		65455BD91D596F2400BB37C0 /* YakutiaMongol.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = YakutiaMongol.jpg; sourceTree = "<group>"; };
+		65455BFD1D5973AB00BB37C0 /* Estados.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Estados.h; sourceTree = "<group>"; };
+		65455BFE1D5973AB00BB37C0 /* Estados.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Estados.m; sourceTree = "<group>"; };
 		654576581D52CF820035A27C /* Navigation Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Navigation Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6545765C1D52CF820035A27C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6545765E1D52CF820035A27C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6545765F1D52CF820035A27C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		654576611D52CF820035A27C /* Home.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
-		654576621D52CF820035A27C /* Home.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Home.m; sourceTree = "<group>"; };
+		654576621D52CF820035A27C /* Home.m */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = Home.m; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
 		654576651D52CF820035A27C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		654576681D52CF820035A27C /* Navigation_Controller.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Navigation_Controller.xcdatamodel; sourceTree = "<group>"; };
 		6545766A1D52CF820035A27C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,6 +125,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65455BB71D5955C100BB37C0 /* Estados */ = {
+			isa = PBXGroup;
+			children = (
+				65455BB81D59565400BB37C0 /* cellEstados.h */,
+				65455BB91D59565400BB37C0 /* cellEstados.m */,
+				65455BBA1D59565400BB37C0 /* cellEstados.xib */,
+			);
+			name = Estados;
+			sourceTree = "<group>";
+		};
 		6545764F1D52CF820035A27C = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +154,7 @@
 		6545765A1D52CF820035A27C /* Navigation Controller */ = {
 			isa = PBXGroup;
 			children = (
+				65455BB71D5955C100BB37C0 /* Estados */,
 				654576761D52CFB60035A27C /* Main */,
 				654576751D52CFAA0035A27C /* Controller */,
 				654576771D52E3630035A27C /* Cells */,
@@ -107,6 +184,8 @@
 				654576621D52CF820035A27C /* Home.m */,
 				655221261D545AB200B08AF8 /* DestinationDetails.h */,
 				655221271D545AB200B08AF8 /* DestinationDetails.m */,
+				65455BFD1D5973AB00BB37C0 /* Estados.h */,
+				65455BFE1D5973AB00BB37C0 /* Estados.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -133,6 +212,35 @@
 		655221181D5415EF00B08AF8 /* imgs */ = {
 			isa = PBXGroup;
 			children = (
+				65455BBD1D596F2400BB37C0 /* Layton5.jpg */,
+				65455BBE1D596F2400BB37C0 /* LaytonMountain.jpg */,
+				65455BBF1D596F2400BB37C0 /* NZauckland.jpg */,
+				65455BC01D596F2400BB37C0 /* NZBay.jpg */,
+				65455BC11D596F2400BB37C0 /* NZnorthland.jpg */,
+				65455BC21D596F2400BB37C0 /* NZSangisborn.jpg */,
+				65455BC31D596F2400BB37C0 /* NZwaikato.jpg */,
+				65455BC41D596F2400BB37C0 /* OremUniversity.jpg */,
+				65455BC51D596F2400BB37C0 /* provomontanas.jpg */,
+				65455BC61D596F2400BB37C0 /* SaladeroUtah.jpg */,
+				65455BC71D596F2400BB37C0 /* SandyCordillera.jpg */,
+				65455BC81D596F2400BB37C0 /* SBCocodrilario.jpg */,
+				65455BC91D596F2400BB37C0 /* SBcocotero.jpg */,
+				65455BCA1D596F2400BB37C0 /* SBDefensa.jpg */,
+				65455BCB1D596F2400BB37C0 /* SBIslaPiedra.jpg */,
+				65455BCC1D596F2400BB37C0 /* SBPresidente.jpg */,
+				65455BCD1D596F2400BB37C0 /* SBTemplo.jpg */,
+				65455BCE1D596F2400BB37C0 /* SBTobara.jpg */,
+				65455BCF1D596F2400BB37C0 /* Vartes.jpg */,
+				65455BD01D596F2400BB37C0 /* VmedanasOro.jpg */,
+				65455BD11D596F2400BB37C0 /* VSalBay.jpg */,
+				65455BD21D596F2400BB37C0 /* VSaltoAngel.jpg */,
+				65455BD31D596F2400BB37C0 /* Vsequia.jpg */,
+				65455BD41D596F2400BB37C0 /* Vsouth.jpg */,
+				65455BD51D596F2400BB37C0 /* YakutiaBlackForest.jpg */,
+				65455BD61D596F2400BB37C0 /* YakutiaEsquimal.jpg */,
+				65455BD71D596F2400BB37C0 /* YakutiaLago.jpg */,
+				65455BD81D596F2400BB37C0 /* Yakutiamina.jpg */,
+				65455BD91D596F2400BB37C0 /* YakutiaMongol.jpg */,
 				655221191D5415EF00B08AF8 /* image1.png */,
 				6552211A1D5415EF00B08AF8 /* image2.png */,
 				6552211B1D5415EF00B08AF8 /* image3.png */,
@@ -199,15 +307,45 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65455BE81D596F2400BB37C0 /* SBIslaPiedra.jpg in Resources */,
+				65455BE21D596F2400BB37C0 /* provomontanas.jpg in Resources */,
+				65455BE41D596F2400BB37C0 /* SandyCordillera.jpg in Resources */,
+				65455BDC1D596F2400BB37C0 /* NZauckland.jpg in Resources */,
 				6545766E1D52CF820035A27C /* LaunchScreen.storyboard in Resources */,
 				6552211E1D5415EF00B08AF8 /* image1.png in Resources */,
 				6552211F1D5415EF00B08AF8 /* image2.png in Resources */,
 				6545766B1D52CF820035A27C /* Assets.xcassets in Resources */,
 				655221211D5415EF00B08AF8 /* image4.png in Resources */,
+				65455BEB1D596F2400BB37C0 /* SBTobara.jpg in Resources */,
+				65455BF21D596F2400BB37C0 /* YakutiaBlackForest.jpg in Resources */,
+				65455BF11D596F2400BB37C0 /* Vsouth.jpg in Resources */,
+				65455BE11D596F2400BB37C0 /* OremUniversity.jpg in Resources */,
+				65455BEE1D596F2400BB37C0 /* VSalBay.jpg in Resources */,
+				65455BE31D596F2400BB37C0 /* SaladeroUtah.jpg in Resources */,
 				655221221D5415EF00B08AF8 /* image5.png in Resources */,
+				65455BED1D596F2400BB37C0 /* VmedanasOro.jpg in Resources */,
+				65455BDA1D596F2400BB37C0 /* Layton5.jpg in Resources */,
+				65455BDE1D596F2400BB37C0 /* NZnorthland.jpg in Resources */,
+				65455BE01D596F2400BB37C0 /* NZwaikato.jpg in Resources */,
+				65455BE51D596F2400BB37C0 /* SBCocodrilario.jpg in Resources */,
+				65455BE71D596F2400BB37C0 /* SBDefensa.jpg in Resources */,
 				6545767C1D52E4000035A27C /* cellHome.xib in Resources */,
+				65455BE61D596F2400BB37C0 /* SBcocotero.jpg in Resources */,
+				65455BE91D596F2400BB37C0 /* SBPresidente.jpg in Resources */,
+				65455BEC1D596F2400BB37C0 /* Vartes.jpg in Resources */,
+				65455BBC1D59565400BB37C0 /* cellEstados.xib in Resources */,
+				65455BF61D596F2400BB37C0 /* YakutiaMongol.jpg in Resources */,
+				65455BF51D596F2400BB37C0 /* Yakutiamina.jpg in Resources */,
+				65455BF31D596F2400BB37C0 /* YakutiaEsquimal.jpg in Resources */,
+				65455BF01D596F2400BB37C0 /* Vsequia.jpg in Resources */,
+				65455BDD1D596F2400BB37C0 /* NZBay.jpg in Resources */,
 				655221201D5415EF00B08AF8 /* image3.png in Resources */,
+				65455BEA1D596F2400BB37C0 /* SBTemplo.jpg in Resources */,
+				65455BDF1D596F2400BB37C0 /* NZSangisborn.jpg in Resources */,
 				654576661D52CF820035A27C /* Main.storyboard in Resources */,
+				65455BF41D596F2400BB37C0 /* YakutiaLago.jpg in Resources */,
+				65455BEF1D596F2400BB37C0 /* VSaltoAngel.jpg in Resources */,
+				65455BDB1D596F2400BB37C0 /* LaytonMountain.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,12 +356,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65455BBB1D59565400BB37C0 /* cellEstados.m in Sources */,
 				654576631D52CF820035A27C /* Home.m in Sources */,
 				654576691D52CF820035A27C /* Navigation_Controller.xcdatamodeld in Sources */,
 				654576601D52CF820035A27C /* AppDelegate.m in Sources */,
 				6545767B1D52E4000035A27C /* cellHome.m in Sources */,
 				6545765D1D52CF820035A27C /* main.m in Sources */,
 				655221281D545AB200B08AF8 /* DestinationDetails.m in Sources */,
+				65455BFF1D5973AB00BB37C0 /* Estados.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
