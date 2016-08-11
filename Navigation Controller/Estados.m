@@ -8,6 +8,7 @@
 
 #import "Estados.h"
 
+int destinationEstadosarmador=0;
 @interface Estados ()
 
 
@@ -19,6 +20,7 @@
 @property NSString *stTitleSelectedUtah;
 @property NSString *stDescriptionSelectedUtah;
 @property NSString *stPhotoSelectedUtah;
+
 
 
 @end
@@ -42,10 +44,17 @@
 - (void)initController {
     
 
+    self.destinationPhotosUtah         = [[NSMutableArray alloc] initWithObjects: @"image1.png", @"image2.png", @"image3.png", @"image4.png",@"image5.png", nil];
+    self.destinationDescriptionsUtah   = [[NSMutableArray alloc] initWithObjects: @"Desierto Navajo", @"Rio de deshielo", @"Lugar habitado mas frio del mundo", @"Cascada del salto",@"Muelle de San Blas", nil];
+    self.destinationTitlesUtah         = [[NSMutableArray alloc] initWithObjects: @"Utah", @"NuevaZelanda", @"Yakutia", @"Venezuela",@"San Blas", nil];
     
-    self.destinationPhotosUtah         = [[NSMutableArray alloc] initWithObjects: @"NZauckland.jpg", @"NZBay.jpg", @"NZnorthland.jpg", @"NZSangisborn.jpg",@"NZSangisborn.jpg", nil];
+    /*self.destinationPhotosUtah         = [[NSMutableArray alloc] initWithObjects: @"NZauckland.jpg", @"NZBay.jpg", @"NZnorthland.jpg", @"NZSangisborn.jpg",@"NZSangisborn.jpg", nil];
     self.destinationDescriptionsUtah   = [[NSMutableArray alloc] initWithObjects: @"Norte sin invierno", @"desembocadura del Kaipara", @"paisajes verdes, colinas y actividad agropecuaria", @"rodeada por las cordilleras Mamaku",@" superficie terrestre más alejado", nil];
-    self.destinationTitlesUtah         = [[NSMutableArray alloc] initWithObjects: @"Northland", @"Auckland", @"Waikato", @"Bay",@"San Gisborn", nil];
+    self.destinationTitlesUtah         = [[NSMutableArray alloc] initWithObjects: @"Northland", @"Auckland", @"Waikato", @"Bay",@"San Gisborn", nil];*/
+    
+    /*self.destinationPhotosUtah         = [[NSMutableArray alloc] initWithObjects: @"LaytonMountain.jpg", @"OremUniversity.jpg", @"provomontanas.jpg", @"SaladeroUtah.jpg",@"SandyCordillero.jpg", nil];
+    self.destinationDescriptionsUtah   = [[NSMutableArray alloc] initWithObjects: @"Saladero", @"Mont;as con ciervos", @"Valley University", @"Cordillera Sasaht",@"Lagos de dehielo", nil];
+    self.destinationTitlesUtah         = [[NSMutableArray alloc] initWithObjects: @"Salt lake city", @"Provo", @"Orem", @"Sandy",@"layton", nil];*/
     
     
     /*self.destinationPhotosNuevaZelanda         = [[NSMutableArray alloc] initWithObjects: @"image1_1.png", @"image1_2.png", @"image1_3.png", @"image1_4.png",@"image1_5.png", nil];
@@ -105,6 +114,8 @@
     self.stDescriptionSelectedUtah  = self.destinationDescriptionsUtah[indexPath.row];
     self.stPhotoSelectedUtah        = self.destinationPhotosUtah[indexPath.row];
     [self performSegueWithIdentifier:@"Home" sender:self];
+     //Home wordLevel  = indexPath.row;
+    destinationEstadosarmador = indexPath.row;
     
 }
 
@@ -116,6 +127,8 @@
     if ([segue.destinationViewController isKindOfClass:[Home class]]) {
        Home *destinationEstados     = [segue destinationViewController];
        destinationEstados.destinationTitlesUtah        = self.stTitleSelectedUtah;
+       // Home wordLevel  = ;
+       //destinationEstadosarmador  = self.stTitleSelectedUtah;
         /*destination.destinationDescription  = self.stDescriptionSelectedUtah;
         destination.destinationPhoto        = self.stPhotoSelectedUtah;*/
    }

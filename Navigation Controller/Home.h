@@ -10,7 +10,13 @@
 #import "cellHome.h"
 #import "DestinationDetails.h"
 
+//extern NSString destinationEstadosarmador;
+
+extern int destinationEstadosarmador;
+
 @interface Home : UIViewController
 @property NSString *destinationTitlesUtah;
+
+
 
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "Home.h"
-
+//int destinationEstadosarmador;
 
 @interface Home ()
 @property NSMutableArray *destinationTitles;
@@ -17,6 +17,10 @@
 @property NSString *stTitleSelected;
 @property NSString *stDescriptionSelected;
 @property NSString *stPhotoSelected;
+
+@property NSMutableArray *destinationTitlesNZ;
+@property NSMutableArray *destinationDescriptionsNZ;
+@property NSMutableArray *destinationPhotosNZ;
 
 
 
@@ -40,11 +44,93 @@
 }
 
 - (void)initController {
-
-    self.destinationPhotos         = [[NSMutableArray alloc] initWithObjects: @"image1.png", @"image2.png", @"image3.png", @"image4.png",@"image5.png", nil];
-    self.destinationDescriptions   = [[NSMutableArray alloc] initWithObjects: @"Desierto Navajo", @"Rio de deshielo", @"Lugar habitado mas frio del mundo", @"Cascada del salto",@"Muelle de San Blas", nil];
-    self.destinationTitles         = [[NSMutableArray alloc] initWithObjects: @"Utah", @"NuevaZelanda", @"Yakutia", @"Venezuela",@"San Blas", nil];
     
+    
+    self.destinationPhotos         = [[NSMutableArray alloc] initWithObjects: @"LaytonMountain.jpg", @"OremUniversity.jpg", @"provomontanas.jpg", @"SaladeroUtah.jpg",@"SandyCordillera.jpg", nil];
+     self.destinationDescriptions   = [[NSMutableArray alloc] initWithObjects: @"Saladero", @"Mont;as con ciervos", @"Valley University", @"Cordillera Sasaht",@"Lagos de dehielo", nil];
+     self.destinationTitles         = [[NSMutableArray alloc] initWithObjects: @"Salt lake city", @"Provo", @"Orem", @"Sandy",@"layton", nil];
+
+    self.destinationPhotos         = [[NSMutableArray alloc] initWithObjects: @"NZBay.jpg", @"NZnorthland.jpg", @"NZSangisborn.jpg", @"NZwaikato.jpg",@"NZauckland.jpg", nil];
+    self.destinationDescriptions   = [[NSMutableArray alloc] initWithObjects: @"Desierto Navajo", @"Rio de deshielo", @"Lugar habitado mas frio del mundo", @"Cascada del salto",@"Muelle de San Blas", nil];
+    self.destinationTitles        = [[NSMutableArray alloc] initWithObjects: @"Bay", @"NuevaZelanda northland", @"Nueva Zelanda Sangisborn", @"NuevaZelanda Waikato",@"Nueva Zeanda auckland", nil];
+    
+    
+    self.destinationPhotosNZ         = [[NSMutableArray alloc] initWithObjects: @"YakutiaEsquimal.jpg", @"YakutiaLago.jpg", @"YakutiaBlackForest.jpg", @"Yakutiamina.jpg",@"YakutiaMongol.jpg", nil];
+    self.destinationDescriptionsNZ   = [[NSMutableArray alloc] initWithObjects: @"Desierto Navajo", @"Rio de deshielo", @"Lugar habitado mas frio del mundo", @"Cascada del salto",@"Muelle de San Blas", nil];
+    self.destinationTitlesNZ        = [[NSMutableArray alloc] initWithObjects: @"Bay", @"NuevaZelanda northland", @"Nueva Zelanda Sangisborn", @"NuevaZelanda Waikato",@"Nueva Zeanda auckland", nil];
+    
+    
+    if(destinationEstadosarmador == 0)
+        
+    {
+        
+        self.destinationPhotos         = [[NSMutableArray alloc] initWithObjects: @"LaytonMountain.jpg", @"OremUniversity.jpg", @"provomontanas.jpg", @"SaladeroUtah.jpg",@"SandyCordillera.jpg", nil];
+        self.destinationDescriptions   = [[NSMutableArray alloc] initWithObjects: @"Saladero", @"Mont;as con ciervos", @"Valley University", @"Cordillera Sasaht",@"Lagos de dehielo", nil];
+        self.destinationTitles         = [[NSMutableArray alloc] initWithObjects: @"Salt lake city", @"Provo", @"Orem", @"Sandy",@"layton", nil];
+        
+        
+    }
+    else if(destinationEstadosarmador == 1)
+    {
+        self.destinationPhotos         = [[NSMutableArray alloc] initWithObjects: @"NZBay.jpg", @"NZnorthland.jpg", @"NZSangisborn.jpg", @"NZwaikato.jpg",@"NZauckland.jpg", nil];
+        self.destinationDescriptions   = [[NSMutableArray alloc] initWithObjects: @"Desierto Navajo", @"Rio de deshielo", @"Lugar habitado mas frio del mundo", @"Cascada del salto",@"Muelle de San Blas", nil];
+        self.destinationTitles        = [[NSMutableArray alloc] initWithObjects: @"Bay", @"NuevaZelanda northland", @"Nueva Zelanda Sangisborn", @"NuevaZelanda Waikato",@"Nueva Zeanda auckland", nil];
+        
+    }
+    
+    else if(destinationEstadosarmador == 2)
+    {
+        
+        self.destinationPhotos         = [[NSMutableArray alloc] initWithObjects: @"YakutiaEsquimal.jpg", @"YakutiaLago.jpg", @"YakutiaBlackForest.jpg", @"Yakutiamina.jpg",@"YakutiaMongol.jpg", nil];
+        self.destinationDescriptions   = [[NSMutableArray alloc] initWithObjects: @"Desierto Navajo", @"Rio de deshielo", @"Lugar habitado mas frio del mundo", @"Cascada del salto",@"Muelle de San Blas", nil];
+        self.destinationTitles       = [[NSMutableArray alloc] initWithObjects: @"Bay", @"NuevaZelanda northland", @"Nueva Zelanda Sangisborn", @"NuevaZelanda Waikato",@"Nueva Zeanda auckland", nil];
+        
+        
+    }
+    
+    else if(destinationEstadosarmador == 3)
+    {
+        self.destinationPhotos         = [[NSMutableArray alloc] initWithObjects: @"VmedanasOro.jpg", @"VSalBay.jpg", @"VSaltoAngel.jpg", @"Vsequia.jpg",@"Vsouth.jpg", nil];
+        self.destinationDescriptions   = [[NSMutableArray alloc] initWithObjects: @"Desierto Navajo", @"Rio de deshielo", @"Lugar habitado mas frio del mundo", @"Cascada del salto",@"Muelle de San Blas", nil];
+        self.destinationTitles       = [[NSMutableArray alloc] initWithObjects: @"Bay", @"NuevaZelanda northland", @"Nueva Zelanda Sangisborn", @"NuevaZelanda Waikato",@"Nueva Zeanda auckland", nil];
+        
+    }
+    
+    else if(destinationEstadosarmador == 4)
+    {
+        self.destinationPhotos         = [[NSMutableArray alloc] initWithObjects: @"SBPresidente.jpg", @"SBTemplo.jpg", @"SBTobara.jpg", @"SBIslaPiedra.jpg",@"SBCocodrilario.jpg", nil];
+        self.destinationDescriptions   = [[NSMutableArray alloc] initWithObjects: @"Desierto Navajo", @"Rio de deshielo", @"Lugar habitado mas frio del mundo", @"Cascada del salto",@"Muelle de San Blas", nil];
+        self.destinationTitles       = [[NSMutableArray alloc] initWithObjects: @"Bay", @"NuevaZelanda northland", @"Nueva Zelanda Sangisborn", @"NuevaZelanda Waikato",@"Nueva Zeanda auckland", nil];
+        
+    }
+    
+    
+    switch(destinationEstadosarmador)
+    {
+        case 0:
+            
+            break;
+            
+        case 1:
+            
+            
+            break;
+            
+        case 2:
+            
+            break;
+            
+        case 3:
+            
+            break;
+            
+        case 4:
+            
+            break;
+            
+            
+            
+    }
     
     
     /*self.destinationPhotos         = [[NSMutableArray alloc] initWithObjects: @"LaytonMountain.jpg", @"OremUniversity.jpg", @"provomontanas.jpg", @"SaladeroUtah.jpg",@"SandyCordillero.jpg", nil];
@@ -100,20 +186,33 @@
         cell = [tableView dequeueReusableCellWithIdentifier:@"cellHome"];
     }
     //Fill cell with info from arrays
+    
+
+    
+       
+
+    /*cell.imgDestination.image        = [UIImage imageNamed:self.destinationPhotosNZ[indexPath.row]];
+    cell.lblDestination.text    = self.destinationTitlesNZ[indexPath.row];
+    cell.lblDescription.text         = self.destinationDescriptionsNZ[indexPath.row];*/
+    
+    
     cell.imgDestination.image        = [UIImage imageNamed:self.destinationPhotos[indexPath.row]];
     cell.lblDestination.text    = self.destinationTitles[indexPath.row];
     cell.lblDescription.text         = self.destinationDescriptions[indexPath.row];
     
-    
+
     
     return cell;
 }
 //-------------------------------------------------------------------------------
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     self.stTitleSelected        = self.destinationTitles[indexPath.row];
     self.stDescriptionSelected  = self.destinationDescriptions[indexPath.row];
     self.stPhotoSelected        = self.destinationPhotos[indexPath.row];
     [self performSegueWithIdentifier:@"DestinationDetails" sender:self];
+    
+
     
 }
 
