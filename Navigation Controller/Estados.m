@@ -84,7 +84,7 @@ int destinationEstadosarmador=0;
 }
 //-------------------------------------------------------------------------------
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.destinationTitlesUtah.count;
+    return 5/*self.destinationTitlesUtah.count*/;
 }
 //-------------------------------------------------------------------------------
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
