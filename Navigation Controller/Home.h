@@ -9,12 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "cellHome.h"
 #import "DestinationDetails.h"
+#import "PayPalMobile.h"//For PayPal
 
 //extern NSString destinationEstadosarmador;
 
 extern int destinationEstadosarmador;
 
 @interface Home : UIViewController
+
+
 @property NSString *destinationTitlesUtah;
 
 
