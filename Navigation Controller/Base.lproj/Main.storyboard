@@ -92,7 +92,7 @@
                                 <color key="highlightedColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WPL-Ke-PfM">
-                                <rect key="frame" x="182" y="517" width="138" height="51"/>
+                                <rect key="frame" x="156" y="375" width="138" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Comprar"/>
                                 <connections>
@@ -131,6 +131,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="image5.png" width="218" height="231"/>
+        <image name="image5.png" width="300" height="168"/>
     </resources>
 </document>

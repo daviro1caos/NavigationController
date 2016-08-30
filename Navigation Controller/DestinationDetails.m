@@ -8,6 +8,8 @@
 
 #import "DestinationDetails.h"
 
+NSString *testStringPrecio;
+
 @interface DestinationDetails ()
 
 @property (nonatomic, strong, readwrite) PayPalConfiguration *payPalConfiguration; //For PayPal
@@ -79,9 +81,49 @@
     PayPalPayment *payment = [[PayPalPayment alloc] init];
     
     // Amount, currency, and description
-    payment.amount = [[NSDecimalNumber alloc] initWithString:@"39.95"];
-    payment.currencyCode = @"USD";
-    payment.shortDescription = @"Awesome saws";
+    
+    //payment.amount = [[NSDecimalNumber alloc] initWithString:@"39.95"];
+    
+    //payment.amount = testStringPrecio;
+    
+    /////////////////////////////////////////////////////////////////////////////////
+    if(destinationEstadosarmador == 0)
+        
+    {
+     payment.amount = [[NSDecimalNumber alloc] initWithString:@"50.00"];
+        
+        
+    }
+    else if(destinationEstadosarmador == 1)
+    {
+
+      payment.amount = [[NSDecimalNumber alloc] initWithString:@"40.00"];
+    }
+    
+    else if(destinationEstadosarmador == 2)
+    {
+        
+        payment.amount = [[NSDecimalNumber alloc] initWithString:@"60.00"];
+    }
+    
+    else if(destinationEstadosarmador == 3)
+    {
+        
+        payment.amount = [[NSDecimalNumber alloc] initWithString:@"80.00"];
+    }
+    
+    else if(destinationEstadosarmador == 4)
+    {
+        
+        payment.amount = [[NSDecimalNumber alloc] initWithString:@"70.00"];
+    }
+    
+    
+    //////////////////////////////////////////////////////////////////////////////////
+   
+    
+    payment.currencyCode = @"MXN";
+    payment.shortDescription = @"La mejor carne del mundo!!!";
     
     // Use the intent property to indicate that this is a "sale" payment,
     // meaning combined Authorization + Capture.

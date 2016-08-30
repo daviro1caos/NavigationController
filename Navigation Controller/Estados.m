@@ -9,6 +9,9 @@
 #import "Estados.h"
 
 int destinationEstadosarmador=0;
+
+
+
 @interface Estados ()
 
 

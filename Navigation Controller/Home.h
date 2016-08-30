@@ -15,6 +15,8 @@
 
 extern int destinationEstadosarmador;
 
+extern NSString *testStringPrecio;
+
 @interface Home : UIViewController
 
 
