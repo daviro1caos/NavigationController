@@ -45,8 +45,10 @@ int destinationEstadosarmador=0;
     
 
     self.destinationPhotosUtah         = [[NSMutableArray alloc] initWithObjects: @"image1.png", @"image2.png", @"image3.png", @"image4.png",@"image5.png", nil];
-    self.destinationDescriptionsUtah   = [[NSMutableArray alloc] initWithObjects: @"Desierto Navajo", @"Rio de deshielo", @"Lugar habitado mas frio del mundo", @"Cascada del salto",@"Muelle de San Blas", nil];
-    self.destinationTitlesUtah         = [[NSMutableArray alloc] initWithObjects: @"Utah", @"NuevaZelanda", @"Yakutia", @"Venezuela",@"San Blas", nil];
+    
+   /* self.destinationDescriptionsUtah   = [[NSMutableArray alloc] initWithObjects: @"Desierto Navajo", @"Rio de deshielo", @"Lugar habitado mas frio del mundo", @"Cascada del salto",@"Muelle de San Blas", nil];*/
+    
+    self.destinationTitlesUtah         = [[NSMutableArray alloc] initWithObjects: @"Carnicos", @"Lacteos", @"Vegetales", @"Cereales",@"Legumiosas", nil];
     
     /*self.destinationPhotosUtah         = [[NSMutableArray alloc] initWithObjects: @"NZauckland.jpg", @"NZBay.jpg", @"NZnorthland.jpg", @"NZSangisborn.jpg",@"NZSangisborn.jpg", nil];
     self.destinationDescriptionsUtah   = [[NSMutableArray alloc] initWithObjects: @"Norte sin invierno", @"desembocadura del Kaipara", @"paisajes verdes, colinas y actividad agropecuaria", @"rodeada por las cordilleras Mamaku",@" superficie terrestre más alejado", nil];

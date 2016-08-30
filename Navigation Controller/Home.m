@@ -67,16 +67,16 @@
     {
         
         self.destinationPhotos         = [[NSMutableArray alloc] initWithObjects: @"LaytonMountain.jpg", @"OremUniversity.jpg", @"provomontanas.jpg", @"SaladeroUtah.jpg",@"SandyCordillera.jpg", nil];
-        self.destinationDescriptions   = [[NSMutableArray alloc] initWithObjects: @"Saladero", @"Mont;as con ciervos", @"Valley University", @"Cordillera Sasaht",@"Lagos de dehielo", nil];
-        self.destinationTitles         = [[NSMutableArray alloc] initWithObjects: @"Salt lake city", @"Provo", @"Orem", @"Sandy",@"layton", nil];
+        self.destinationDescriptions   = [[NSMutableArray alloc] initWithObjects: @"Chorizo de la region iberica ", @"Ahumado y curado al aire", @"Hecha con tripa natural de oveja", @"Legitimo buey de kobe",@"Chuleta corte Valenciano", nil];
+        self.destinationTitles         = [[NSMutableArray alloc] initWithObjects: @"Chorizo Espanol", @"Salami", @"Salchicha de Viena", @"Filete",@"Chuleta", nil];
         
         
     }
     else if(destinationEstadosarmador == 1)
     {
         self.destinationPhotos         = [[NSMutableArray alloc] initWithObjects: @"NZBay.jpg", @"NZnorthland.jpg", @"NZSangisborn.jpg", @"NZwaikato.jpg",@"NZauckland.jpg", nil];
-        self.destinationDescriptions   = [[NSMutableArray alloc] initWithObjects: @"Desierto Navajo", @"Rio de deshielo", @"Lugar habitado mas frio del mundo", @"Cascada del salto",@"Muelle de San Blas", nil];
-        self.destinationTitles        = [[NSMutableArray alloc] initWithObjects: @"Bay", @"NuevaZelanda northland", @"Nueva Zelanda Sangisborn", @"NuevaZelanda Waikato",@"Nueva Zeanda auckland", nil];
+        self.destinationDescriptions   = [[NSMutableArray alloc] initWithObjects: @"Leche de vaca feliz", @"De Montana", @"Con probioticos", @"De primer herbor",@"Entera sin descremar", nil];
+        self.destinationTitles        = [[NSMutableArray alloc] initWithObjects: @"Leche", @"Queso de cabra", @"Yogurth", @"Requezon",@"Mantequilla", nil];
         
     }
     
@@ -84,8 +84,8 @@
     {
         
         self.destinationPhotos         = [[NSMutableArray alloc] initWithObjects: @"YakutiaEsquimal.jpg", @"YakutiaLago.jpg", @"YakutiaBlackForest.jpg", @"Yakutiamina.jpg",@"YakutiaMongol.jpg", nil];
-        self.destinationDescriptions   = [[NSMutableArray alloc] initWithObjects: @"Desierto Navajo", @"Rio de deshielo", @"Lugar habitado mas frio del mundo", @"Cascada del salto",@"Muelle de San Blas", nil];
-        self.destinationTitles       = [[NSMutableArray alloc] initWithObjects: @"Bay", @"NuevaZelanda northland", @"Nueva Zelanda Sangisborn", @"NuevaZelanda Waikato",@"Nueva Zeanda auckland", nil];
+        self.destinationDescriptions   = [[NSMutableArray alloc] initWithObjects: @"Azteca no trasgenico", @"Originaria de India", @"Pasilla salvaje", @"Inca andina",@"Italiana de enredadera", nil];
+        self.destinationTitles       = [[NSMutableArray alloc] initWithObjects: @"Jitomate", @"Cebolla", @"Chile", @"Papa",@"Calabaza", nil];
         
         
     }
@@ -93,16 +93,16 @@
     else if(destinationEstadosarmador == 3)
     {
         self.destinationPhotos         = [[NSMutableArray alloc] initWithObjects: @"VmedanasOro.jpg", @"VSalBay.jpg", @"VSaltoAngel.jpg", @"Vsequia.jpg",@"Vsouth.jpg", nil];
-        self.destinationDescriptions   = [[NSMutableArray alloc] initWithObjects: @"Desierto Navajo", @"Rio de deshielo", @"Lugar habitado mas frio del mundo", @"Cascada del salto",@"Muelle de San Blas", nil];
-        self.destinationTitles       = [[NSMutableArray alloc] initWithObjects: @"Bay", @"NuevaZelanda northland", @"Nueva Zelanda Sangisborn", @"NuevaZelanda Waikato",@"Nueva Zeanda auckland", nil];
+        self.destinationDescriptions   = [[NSMutableArray alloc] initWithObjects: @"Maiz de la region de Nayarit", @"arroz salvaje", @"trigo mesopotamico", @"Egipcia (Oriente medio)",@"Del valle del Eufrates", nil];
+        self.destinationTitles       = [[NSMutableArray alloc] initWithObjects: @"Maiz chanaro", @"Arroz", @"Trigo", @"Cebada",@"Centeno", nil];
         
     }
     
     else if(destinationEstadosarmador == 4)
     {
         self.destinationPhotos         = [[NSMutableArray alloc] initWithObjects: @"SBPresidente.jpg", @"SBTemplo.jpg", @"SBTobara.jpg", @"SBIslaPiedra.jpg",@"SBCocodrilario.jpg", nil];
-        self.destinationDescriptions   = [[NSMutableArray alloc] initWithObjects: @"Desierto Navajo", @"Rio de deshielo", @"Lugar habitado mas frio del mundo", @"Cascada del salto",@"Muelle de San Blas", nil];
-        self.destinationTitles       = [[NSMutableArray alloc] initWithObjects: @"Bay", @"NuevaZelanda northland", @"Nueva Zelanda Sangisborn", @"NuevaZelanda Waikato",@"Nueva Zeanda auckland", nil];
+        self.destinationDescriptions   = [[NSMutableArray alloc] initWithObjects: @"Mediterraneo griego", @"NorAfricana", @"Negro jamapa", @"De arbol",@"Oriental-Brasilena", nil];
+        self.destinationTitles       = [[NSMutableArray alloc] initWithObjects: @"Garbanzo", @"Lenteja", @"Frijol", @"Chicharo",@"Soya", nil];
         
     }
     
