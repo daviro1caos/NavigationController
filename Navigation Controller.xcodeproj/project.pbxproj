@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65066DF51D79E3A6008F5589 /* CarroComp.m in Sources */ = {isa = PBXBuildFile; fileRef = 65066DF41D79E3A6008F5589 /* CarroComp.m */; };
+		6507DF7C1D794826006A6023 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6507DF7A1D794826006A6023 /* TableViewCell.m */; };
+		6507DF7D1D794826006A6023 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6507DF7B1D794826006A6023 /* TableViewCell.xib */; };
 		65455BBB1D59565400BB37C0 /* cellEstados.m in Sources */ = {isa = PBXBuildFile; fileRef = 65455BB91D59565400BB37C0 /* cellEstados.m */; };
 		65455BBC1D59565400BB37C0 /* cellEstados.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65455BBA1D59565400BB37C0 /* cellEstados.xib */; };
 		65455BDA1D596F2400BB37C0 /* Layton5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65455BBD1D596F2400BB37C0 /* Layton5.jpg */; };
@@ -60,6 +63,11 @@
 
 /* Begin PBXFileReference section */
 		4AE7B851D9ADE2A0180AFA4B /* Pods-Navigation Controller.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Navigation Controller.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Navigation Controller/Pods-Navigation Controller.debug.xcconfig"; sourceTree = "<group>"; };
+		65066DF31D79E3A6008F5589 /* CarroComp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarroComp.h; sourceTree = "<group>"; };
+		65066DF41D79E3A6008F5589 /* CarroComp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarroComp.m; sourceTree = "<group>"; };
+		6507DF791D794826006A6023 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		6507DF7A1D794826006A6023 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		6507DF7B1D794826006A6023 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		65455BB81D59565400BB37C0 /* cellEstados.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cellEstados.h; sourceTree = "<group>"; };
 		65455BB91D59565400BB37C0 /* cellEstados.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cellEstados.m; sourceTree = "<group>"; };
 		65455BBA1D59565400BB37C0 /* cellEstados.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cellEstados.xib; sourceTree = "<group>"; };
@@ -108,7 +116,7 @@
 		654576781D52E4000035A27C /* cellHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cellHome.h; sourceTree = "<group>"; };
 		654576791D52E4000035A27C /* cellHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cellHome.m; sourceTree = "<group>"; };
 		6545767A1D52E4000035A27C /* cellHome.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cellHome.xib; sourceTree = "<group>"; };
-		65501F631D75F60300599164 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		65501F631D75F60300599164 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		655221191D5415EF00B08AF8 /* image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image1.png; sourceTree = "<group>"; };
 		6552211A1D5415EF00B08AF8 /* image2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image2.png; sourceTree = "<group>"; };
 		6552211B1D5415EF00B08AF8 /* image3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image3.png; sourceTree = "<group>"; };
@@ -139,6 +147,25 @@
 				93C1E7B26C3805D7CE811EA1 /* Pods-Navigation Controller.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		65066DF21D79E356008F5589 /* CarroCom */ = {
+			isa = PBXGroup;
+			children = (
+				65066DF41D79E3A6008F5589 /* CarroComp.m */,
+				65066DF31D79E3A6008F5589 /* CarroComp.h */,
+			);
+			name = CarroCom;
+			sourceTree = "<group>";
+		};
+		6507DF781D794619006A6023 /* cellCompras */ = {
+			isa = PBXGroup;
+			children = (
+				6507DF791D794826006A6023 /* TableViewCell.h */,
+				6507DF7A1D794826006A6023 /* TableViewCell.m */,
+				6507DF7B1D794826006A6023 /* TableViewCell.xib */,
+			);
+			name = cellCompras;
 			sourceTree = "<group>";
 		};
 		65455BB71D5955C100BB37C0 /* Estados */ = {
@@ -173,6 +200,8 @@
 		6545765A1D52CF820035A27C /* Navigation Controller */ = {
 			isa = PBXGroup;
 			children = (
+				65066DF21D79E356008F5589 /* CarroCom */,
+				6507DF781D794619006A6023 /* cellCompras */,
 				65455BB71D5955C100BB37C0 /* Estados */,
 				654576761D52CFB60035A27C /* Main */,
 				654576751D52CFAA0035A27C /* Controller */,
@@ -359,6 +388,7 @@
 				65455BDE1D596F2400BB37C0 /* NZnorthland.jpg in Resources */,
 				65455BE01D596F2400BB37C0 /* NZwaikato.jpg in Resources */,
 				65455BE51D596F2400BB37C0 /* SBCocodrilario.jpg in Resources */,
+				6507DF7D1D794826006A6023 /* TableViewCell.xib in Resources */,
 				65455BE71D596F2400BB37C0 /* SBDefensa.jpg in Resources */,
 				6545767C1D52E4000035A27C /* cellHome.xib in Resources */,
 				65455BE61D596F2400BB37C0 /* SBcocotero.jpg in Resources */,
@@ -437,8 +467,10 @@
 			files = (
 				65455BBB1D59565400BB37C0 /* cellEstados.m in Sources */,
 				654576631D52CF820035A27C /* Home.m in Sources */,
+				65066DF51D79E3A6008F5589 /* CarroComp.m in Sources */,
 				654576691D52CF820035A27C /* Navigation_Controller.xcdatamodeld in Sources */,
 				654576601D52CF820035A27C /* AppDelegate.m in Sources */,
+				6507DF7C1D794826006A6023 /* TableViewCell.m in Sources */,
 				6545767B1D52E4000035A27C /* cellHome.m in Sources */,
 				6545765D1D52CF820035A27C /* main.m in Sources */,
 				655221281D545AB200B08AF8 /* DestinationDetails.m in Sources */,

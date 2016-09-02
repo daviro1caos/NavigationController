@@ -1,26 +1,21 @@
 //
-//  DestinationDetails.m
+//  CarroComp.m
 //  Navigation Controller
 //
-//  Created by Daniel on 8/4/16.
+//  Created by Daniel on 9/2/16.
 //  Copyright © 2016 DanielCompany. All rights reserved.
 //
 
-#import "DestinationDetails.h"
+#import "CarroComp.h"
 
-int Contador1;
-int Contador2;
-int PrecioFinal =0;
-NSString *testStringPrecio;
 
-@interface DestinationDetails ()
+@interface CarroComp ()
 
 @property (nonatomic, strong, readwrite) PayPalConfiguration *payPalConfiguration; //For PayPal
 
 @end
 
-@implementation DestinationDetails
-
+@implementation CarroComp
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
@@ -42,12 +37,52 @@ NSString *testStringPrecio;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.lblTitle.text          = self.destinationTitle;
-    self.lblDescription.text    = self.destinationDescription;
-    self.imgDestination.image   = [UIImage imageNamed:self.destinationPhoto];
+    self.lblNumItems.text      = [NSString stringWithFormat:@"%d", Contador1];
+    self.lblPrecioTotal.text   = [NSString stringWithFormat:@"%d",  Contador1];
     
-    self.lblDescription.numberOfLines = 0;
-    [self.lblDescription sizeToFit];
+   
+    /////////////////////////////////////////////////////////////////////////////////
+    if(destinationEstadosarmador == 0)
+        
+    {
+        Contador2 =Contador2+50;
+        self.lblPrecioTotal.text   = [NSString stringWithFormat:@"%d",  Contador2];
+        
+        
+    }
+    else if(destinationEstadosarmador == 1)
+    {
+        Contador2 =Contador2+40;
+        //payment.amount = [[NSDecimalNumber alloc] initWithString:@"40.00"];
+        self.lblPrecioTotal.text   = [NSString stringWithFormat:@"%d",  Contador2];
+    }
+    
+    else if(destinationEstadosarmador == 2)
+    {
+        Contador2 =Contador2+60;
+        //payment.amount = [[NSDecimalNumber alloc] initWithString:@"60.00"];
+        self.lblPrecioTotal.text   = [NSString stringWithFormat:@"%d",  Contador2];
+    }
+    
+    else if(destinationEstadosarmador == 3)
+    {
+        Contador2 =Contador2+80;
+        //payment.amount = [[NSDecimalNumber alloc] initWithString:@"80.00"];
+        self.lblPrecioTotal.text   = [NSString stringWithFormat:@"%d",  Contador2];
+    }
+    
+
+    
+    else if(destinationEstadosarmador == 4)
+    {
+        Contador2 =Contador2+70;
+        
+        //payment.amount = [[NSDecimalNumber alloc] initWithString:@"70.00"];
+        self.lblPrecioTotal.text   = [NSString stringWithFormat:@"%d",  Contador2];
+    }
+    
+    
+    ///////////////////////////////
     // Do any additional setup after loading the view.
 }
 
@@ -55,6 +90,15 @@ NSString *testStringPrecio;
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    // Start out working with the test environment! When you are ready, switch to PayPalEnvironmentProduction.
+    [PayPalMobile preconnectWithEnvironment:PayPalEnvironmentNoNetwork];
+}
+
 
 /*
 #pragma mark - Navigation
@@ -67,18 +111,8 @@ NSString *testStringPrecio;
 */
 
 
-/***************************************For PayPal*********************************/
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    
-    // Start out working with the test environment! When you are ready, switch to PayPalEnvironmentProduction.
-    [PayPalMobile preconnectWithEnvironment:PayPalEnvironmentNoNetwork];
-}
-
-// SomeViewController.m
-
-- (IBAction)pay {
+- (IBAction)PagarTodo  {
     
     // Create a PayPalPayment
     PayPalPayment *payment = [[PayPalPayment alloc] init];
@@ -93,12 +127,12 @@ NSString *testStringPrecio;
     if(destinationEstadosarmador == 0)
         
     {
-
-       
+        
+        
         
         //payment.amount = [[NSDecimalNumber alloc] initWithInt:Contador2];
         
-
+        
         
         
         //NSString stringWithFormat:@"%d",  Contador3];
@@ -107,8 +141,8 @@ NSString *testStringPrecio;
     }
     else if(destinationEstadosarmador == 1)
     {
-
-      payment.amount = [[NSDecimalNumber alloc] initWithString:@"40.00"];
+        
+        payment.amount = [[NSDecimalNumber alloc] initWithString:@"40.00"];
     }
     
     else if(destinationEstadosarmador == 2)
@@ -131,7 +165,7 @@ NSString *testStringPrecio;
     
     payment.amount = [[NSDecimalNumber alloc] initWithInt:Contador2];
     //////////////////////////////////////////////////////////////////////////////////
-   
+    
     
     payment.currencyCode = @"MXN";
     payment.shortDescription = @"Tu mejor tienda de organicos!!!";
@@ -201,28 +235,54 @@ NSString *testStringPrecio;
     // the confirmation and try again later.
 }
 
-
-- (IBAction)AgregarCarrito {
+- (IBAction)QuitarAnterior {
     
-[self performSegueWithIdentifier:@"AgregarCarrito" sender:self];
-
-   Contador1 +=1;
+    Contador1-=1;
+    self.lblNumItems.text      = [NSString stringWithFormat:@"%d", Contador1];
+    /////////////////////////////////////////////////////////////////////////////////
+    if(destinationEstadosarmador == 0)
+        
+    {
+        Contador2 =Contador2-50;
+        self.lblPrecioTotal.text   = [NSString stringWithFormat:@"%d",  Contador2];
+        
+        
+    }
+    else if(destinationEstadosarmador == 1)
+    {
+        Contador2 =Contador2-40;
+        //payment.amount = [[NSDecimalNumber alloc] initWithString:@"40.00"];
+        self.lblPrecioTotal.text   = [NSString stringWithFormat:@"%d",  Contador2];
+    }
     
+    else if(destinationEstadosarmador == 2)
+    {
+        Contador2 =Contador2-60;
+        //payment.amount = [[NSDecimalNumber alloc] initWithString:@"60.00"];
+        self.lblPrecioTotal.text   = [NSString stringWithFormat:@"%d",  Contador2];
+    }
+    
+    else if(destinationEstadosarmador == 3)
+    {
+        Contador2 =Contador2-80;
+        //payment.amount = [[NSDecimalNumber alloc] initWithString:@"80.00"];
+        self.lblPrecioTotal.text   = [NSString stringWithFormat:@"%d",  Contador2];
+    }
+    
+    
+    
+    else if(destinationEstadosarmador == 4)
+    {
+        Contador2 =Contador2-70;
+        
+        //payment.amount = [[NSDecimalNumber alloc] initWithString:@"70.00"];
+        self.lblPrecioTotal.text   = [NSString stringWithFormat:@"%d",  Contador2];
+    }
+    
+    
+    ///////////////////////////////
 
     
     
 }
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    
-    /*if ([segue.destinationViewController isKindOfClass:[Municipios class]]) {
-     Municipios *destination     = [segue destinationViewController];
-     destination.IStateForMun        = self.IState;
-     //        destination.destinationDescription  = self.stDescriptionSelected;
-     //        destination.destinationPhoto        = self.stPhotoSelected;
-     //
-     }*/
-}
-
-
 @end
