@@ -282,7 +282,127 @@
     
     ///////////////////////////////
 
+
+}
+
+
+
+- (IBAction)emailButtonPushed:(id)sender {
     
+    
+    
+    // From within your active view controller
+    /*
+     // From within your active view controller
+     if([MFMailComposeViewController canSendMail]) {
+     MFMailComposeViewController *mailCont = [[MFMailComposeViewController alloc] init];
+     mailCont.mailComposeDelegate = self;
+     
+     [mailCont setSubject:@"yo!"];
+     [mailCont setToRecipients:[NSArray arrayWithObject:@"joel@stackoverflow.com"]];
+     [mailCont setMessageBody:@"Don't ever want to give you up" isHTML:NO];
+     
+     [self presentModalViewController:mailCont animated:YES];
+     [mailCont release];
+     }
+     */
+    
+    if([MFMailComposeViewController canSendMail]) {
+        MFMailComposeViewController *mailCont = [[MFMailComposeViewController alloc] init];
+        mailCont.mailComposeDelegate = self;
+        [mailCont setSubject:@"Your email"];
+        [mailCont setMessageBody:[@"Your body for this message is " stringByAppendingString:@" this is awesome"] isHTML:NO];
+        [self presentViewController:mailCont animated:YES completion:nil];
+    }
     
 }
+
+
+// Then implement the delegate method
+
+/*
+ - (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error {
+ [self dismissModalViewControllerAnimated:YES];
+ }
+ */
+
+
+
+//- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error {
+//handle any error
+// [controller dismissViewControllerAnimated:YES completion:nil];
+//}
+
+
+
+
+- (void)showEmail:(NSString*)file {
+    
+    NSString *emailTitle = @"Great Photo and Doc";
+    NSString *messageBody = @"Hey, check this out!";
+    NSArray *toRecipents = [NSArray arrayWithObject:@"support@appcoda.com"];
+    
+    MFMailComposeViewController *mc = [[MFMailComposeViewController alloc] init];
+    mc.mailComposeDelegate = self;
+    [mc setSubject:emailTitle];
+    [mc setMessageBody:messageBody isHTML:NO];
+    [mc setToRecipients:toRecipents];
+    
+    // Determine the file name and extension
+    NSArray *filepart = [file componentsSeparatedByString:@"."];
+    NSString *filename = [filepart objectAtIndex:0];
+    NSString *extension = [filepart objectAtIndex:1];
+    
+    // Get the resource path and read the file using NSData
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:filename ofType:extension];
+    NSData *fileData = [NSData dataWithContentsOfFile:filePath];
+    
+    // Determine the MIME type
+    NSString *mimeType;
+    if ([extension isEqualToString:@"jpg"]) {
+        mimeType = @"image/jpeg";
+    } else if ([extension isEqualToString:@"png"]) {
+        mimeType = @"image/png";
+    } else if ([extension isEqualToString:@"doc"]) {
+        mimeType = @"application/msword";
+    } else if ([extension isEqualToString:@"ppt"]) {
+        mimeType = @"application/vnd.ms-powerpoint";
+    } else if ([extension isEqualToString:@"html"]) {
+        mimeType = @"text/html";
+    } else if ([extension isEqualToString:@"pdf"]) {
+        mimeType = @"application/pdf";
+    }
+    
+    // Add attachment
+    [mc addAttachmentData:fileData mimeType:mimeType fileName:filename];
+    
+    // Present mail view controller on screen
+    [self presentViewController:mc animated:YES completion:NULL];
+    
+}
+
+- (void) mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
+{
+    switch (result)
+    {
+        case MFMailComposeResultCancelled:
+            NSLog(@"Mail cancelled");
+            break;
+        case MFMailComposeResultSaved:
+            NSLog(@"Mail saved");
+            break;
+        case MFMailComposeResultSent:
+            NSLog(@"Mail sent");
+            break;
+        case MFMailComposeResultFailed:
+            NSLog(@"Mail sent failure: %@", [error localizedDescription]);
+            break;
+        default:
+            break;
+    }
+    
+    // Close the Mail Interface
+    [self dismissViewControllerAnimated:YES completion:NULL];
+}
+
 @end

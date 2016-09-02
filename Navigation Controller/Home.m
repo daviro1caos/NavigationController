@@ -80,7 +80,7 @@
     else if(destinationEstadosarmador == 1)
     {
         self.destinationPhotos         = [[NSMutableArray alloc] initWithObjects: @"NZBay.jpg", @"NZnorthland.jpg", @"NZSangisborn.jpg", @"NZwaikato.jpg",@"NZauckland.jpg", nil];
-        self.destinationDescriptions   = [[NSMutableArray alloc] initWithObjects: @"Leche de vaca feliz", @"De Montana", @"Con probioticos", @"De primer herbor",@"Entera sin descremar", nil];
+        self.destinationDescriptions   = [[NSMutableArray alloc] initWithObjects: @"Leche de vaca feliz       Precio $50.00", @"De Montana       Precio $40.00", @"Con probioticos       Precio $60.00", @"De primer herbor        Precio $80.00",@"Entera sin descremar       Precio $70.00", nil];
         self.destinationTitles        = [[NSMutableArray alloc] initWithObjects: @"Leche", @"Queso de cabra", @"Yogurth", @"Requezon",@"Mantequilla", nil];
         
        testStringPrecio = @" 20.00 ";
@@ -91,7 +91,7 @@
     {
         
         self.destinationPhotos         = [[NSMutableArray alloc] initWithObjects: @"YakutiaEsquimal.jpg", @"YakutiaLago.jpg", @"YakutiaBlackForest.jpg", @"Yakutiamina.jpg",@"YakutiaMongol.jpg", nil];
-        self.destinationDescriptions   = [[NSMutableArray alloc] initWithObjects: @"Azteca no trasgenico", @"Originaria de India", @"Pasilla salvaje", @"Inca andina",@"Italiana de enredadera", nil];
+        self.destinationDescriptions   = [[NSMutableArray alloc] initWithObjects: @"Azteca no trasgenico       Precio $50.00", @"Originaria de India       Precio $40.00", @"Pasilla salvaje       Precio $60.00", @"Inca andina       Precio $80.00",@"Italiana de enredadera       Precio $70.00", nil];
         self.destinationTitles       = [[NSMutableArray alloc] initWithObjects: @"Jitomate", @"Cebolla", @"Chile", @"Papa",@"Calabaza", nil];
         
         testStringPrecio = @" 30.00 ";
@@ -101,7 +101,7 @@
     else if(destinationEstadosarmador == 3)
     {
         self.destinationPhotos         = [[NSMutableArray alloc] initWithObjects: @"VmedanasOro.jpg", @"VSalBay.jpg", @"VSaltoAngel.jpg", @"Vsequia.jpg",@"Vsouth.jpg", nil];
-        self.destinationDescriptions   = [[NSMutableArray alloc] initWithObjects: @"Maiz de la region de Nayarit", @"arroz salvaje", @"trigo mesopotamico", @"Egipcia (Oriente medio)",@"Del valle del Eufrates", nil];
+        self.destinationDescriptions   = [[NSMutableArray alloc] initWithObjects: @"Maiz de la region de Nayarit       Precio $50.00", @"arroz salvaje       Precio $40.00", @"trigo mesopotamico       Precio $60.00", @"Egipcia (Oriente medio)       Precio $80.00",@"Del valle del Eufrates       Precio $70.00", nil];
         self.destinationTitles       = [[NSMutableArray alloc] initWithObjects: @"Maiz chanaro", @"Arroz", @"Trigo", @"Cebada",@"Centeno", nil];
         
         testStringPrecio = @" 40.00 ";
@@ -111,7 +111,7 @@
     else if(destinationEstadosarmador == 4)
     {
         self.destinationPhotos         = [[NSMutableArray alloc] initWithObjects: @"SBPresidente.jpg", @"SBTemplo.jpg", @"SBTobara.jpg", @"SBIslaPiedra.jpg",@"SBCocodrilario.jpg", nil];
-        self.destinationDescriptions   = [[NSMutableArray alloc] initWithObjects: @"Mediterraneo griego", @"NorAfricana", @"Negro jamapa", @"De arbol",@"Oriental-Brasilena", nil];
+        self.destinationDescriptions   = [[NSMutableArray alloc] initWithObjects: @"Mediterraneo griego       Precio $50.00", @"NorAfricana       Precio $40.00", @"Negro jamapa       Precio $60.00", @"De arbol       Precio $80.00",@"Oriental-Brasilena       Precio $70.00", nil];
         self.destinationTitles       = [[NSMutableArray alloc] initWithObjects: @"Garbanzo", @"Lenteja", @"Frijol", @"Chicharo",@"Soya", nil];
         
         testStringPrecio = @" 50.00 ";

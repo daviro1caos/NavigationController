@@ -9,10 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "DestinationDetails.h"
 #import "PayPalMobile.h"//For PayPal
+#import <MessageUI/MessageUI.h>
+#import <MessageUI/MFMailComposeViewController.h>
 
 
 
-@interface CarroComp : UIViewController<PayPalPaymentDelegate>
+@interface CarroComp : UIViewController<PayPalPaymentDelegate,MFMailComposeViewControllerDelegate>
 
 
 //Objects
