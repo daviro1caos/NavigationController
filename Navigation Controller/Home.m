@@ -69,7 +69,7 @@
         
         self.destinationPhotos         = [[NSMutableArray alloc] initWithObjects: @"LaytonMountain.jpg", @"OremUniversity.jpg", @"provomontanas.jpg", @"SaladeroUtah.jpg",@"SandyCordillera.jpg", nil];
         
-        self.destinationDescriptions   = [[NSMutableArray alloc] initWithObjects: @"Chorizo de la region iberica       Precio $50.00", @"Ahumado y curado al aire                             Precio $40.00", @"Hecha con tripa natural de oveja                      Precio $60.00", @"Legitimo buey de kobe                              Precio $80.00",@"Chuleta corte Valenciano                              Precio $70.00", nil];
+        self.destinationDescriptions   = [[NSMutableArray alloc] initWithObjects: @"Chorizo de la region iberica       Precio $50.00", @"Ahumado y curado al aire        Precio $40.00", @"Hecha con tripa natural de oveja     Precio $60.00", @"Legitimo buey de kobe         Precio $80.00",@"Chuleta corte Valenciano      Precio $70.00", nil];
         
         self.destinationTitles         = [[NSMutableArray alloc] initWithObjects: @"Chorizo Espanol", @"Salami", @"Salchicha de Viena", @"Filete",@"Chuleta", nil];
         
